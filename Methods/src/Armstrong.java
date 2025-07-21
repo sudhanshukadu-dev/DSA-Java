@@ -6,13 +6,13 @@ public class Armstrong {
     }
     static void printArm(int n){
         int original = n;
-        int sum = 0;
+        int ans = 0;
         while (n > 0){
             int rem = n % 10;
-            sum = sum + (rem * rem * rem);
+            ans = ans + (rem * rem * rem);
             n /= 10;
         }
-        if (sum == original) {
+        if (ans == original) {
             System.out.print(original + " ");
         }
     }
